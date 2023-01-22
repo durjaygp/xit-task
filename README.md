@@ -1,4 +1,4 @@
 # xit-task
 
 Task - 01
-![Screenshot](task/task-1.png)
+![Screenshot](task-01/task-1.png)
