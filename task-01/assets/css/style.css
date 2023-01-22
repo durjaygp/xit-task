@@ -1,0 +1,332 @@
+/*
+Task - 01
+Task by: Durjay Ghosh
+*/
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Cardo', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif; */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+}
+:root{
+  --main-color: #e84545;
+  --main-gray-color: #c6cacc;
+  --main-bg-color: #2b2e4a;
+  --nav-text-color: #cacad1;
+  --nav-brand-color: #e4e4e4;
+}
+.hero-bg{
+  background: url('../images/bg-designing.jpg');
+  position: relative;
+  background-size: cover;
+  z-index: 9;
+}
+.image-overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--main-bg-color);
+  opacity: 80%;
+  z-index: -1;
+}
+nav-hero{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+}
+.navbar{
+  border-bottom: 2px solid #505369;
+
+}
+
+.navbar-brand{
+  font-family: 'Raleway', sans-serif;
+  font-size: 56px;
+  font-weight: 500;
+  color: var(--nav-brand-color);
+}
+.navbar-brand:hover{
+  color: var(--main-color);
+}
+
+.nav-link{
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--nav-text-color);
+  margin-left: 50px;
+}
+.nav-link:hover{
+  color: var(--main-color);
+}
+
+.hero{
+  margin: 152px;
+}
+.hero h1{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  font-size: 65px;
+}
+.hero p{
+  margin-bottom: 50px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+}
+button{
+  border: none;
+}
+.main-button{
+  width: 200px;
+  height: 40px;
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 13px;
+  margin-bottom: 100px;
+}
+ .main-button:hover{
+  border: 1px solid #e84545;
+  background-color: transparent; 
+  color: #fff;
+  transition: 0.3s;
+} 
+
+/* features css */
+.features img{
+  margin-bottom: 30px;
+
+}
+.features h6{
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+}
+.features p{
+  text-align: center;
+  font-size: 14px;
+}
+
+
+/* Works css style  */
+.works{
+  margin-top: 120px;
+}
+
+.works-1 {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 395px;
+  height: auto;
+
+
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--main-color);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.works-1:hover .overlay {
+  opacity: 60%;
+  bottom: 0;
+  height: 100%;
+  width: 395px;
+}
+.works-1:hover h6 {
+  opacity: 100%;
+  font-weight: bold;
+  font-size: 14px;
+  color:white;
+}
+.works-1:hover p {
+  opacity: 100%;
+  font-size: 14px;
+  color: #fff;
+}
+
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Teams Css Style */
+.teams{
+  margin-top: 100px;
+}
+.teams img{
+  width: 100%;
+  height: auto;
+    margin: auto;
+    display: block;
+}
+.teams h6{
+  margin-top: 30px;
+  font-size: 22px;
+  align-items: center;
+}
+.teams p{
+  font-size: 13px;
+  color: #e84545;
+}
+.teams span{
+  font-size: 14px;
+}
+.social-icons{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.social-icons i{
+  color: #c6cacc;
+  padding: 15px;
+  border: 1px solid #c6cacc;
+  cursor: pointer;
+}
+.clients{
+  margin-top: 100px;
+  margin-bottom: 30px;
+  background-color: #53354a;
+  color: #fff;
+}
+.clients p{
+  font-family: 'Cardo', serif;
+  font-style: italic;
+  font-size: 36px;
+  text-align: left;
+}
+.clients span{
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.dot{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #755d6e;
+  display: flex;
+  margin: 5px;
+}
+.dot-active{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  margin: 5px;
+}
+.dot-margin{
+  margin-left: 200px;
+  margin-top: 60px;
+}
+.download{
+  margin-top: 100px;
+
+}
+.download span{
+  margin-bottom: 50px!important;
+  font-weight: thin;
+  font-size: 28px;
+}
+.download p{
+  font-weight: bold;
+  font-size: 13px;
+  margin-bottom: 40px;
+
+}
+.download button:hover{
+  background-color: #e84545;
+}
+
+.footer{
+  background-color: #3a3e64;
+  color: #fff;
+
+}
+.content-footer{
+  margin-top: 60px;
+  /* margin-bottom: 70px; */
+}
+.footer p{
+  font-weight: bold;
+}
+.footer-text{
+  background-color: #313454;
+  color: #fff;
+}
+.footer-p-text{
+  margin-top: 40px;
+  font-size: 14px;
+  color: #808080;
+}
+.footer-p-text span{
+  font-weight: bold;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+  .hero h1{
+    font-size: 18px!important;
+  }
+  .hero p{
+    font-size: 13px!important;
+  }
+  .main-button{
+    width: 25px;
+    font-size: 13px;
+  }
+
+}
