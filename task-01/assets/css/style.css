@@ -120,6 +120,7 @@ button{
 /* Works css style  */
 .works{
   margin-top: 120px;
+  margin-left: 30px;
 }
 
 .works-1 {
@@ -298,25 +299,6 @@ button{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 700px) {
   .hero h1{
     font-size: 18px!important;
@@ -328,5 +310,33 @@ button{
     width: 25px;
     font-size: 13px;
   }
+  .hero{
+    margin: 25px;
+  }
+  .main-button{
+    width: 200px;
+    margin-bottom: 50px;
+  }
+  .works{
+    margin: 0px;
+    padding: 10px;
+  }
+  .works img{
+    margin-top: 10px;
+  }
+  .content-footer{
+    margin-top: 15px;
+  }
+  .footer-p-text{
+    margin-top: 25px;
+  }
+  .download{
+    margin-top: 50px;
+  }
+  .dot-margin{
+    margin-left: 33%;
+  }
+
+
 
 }
